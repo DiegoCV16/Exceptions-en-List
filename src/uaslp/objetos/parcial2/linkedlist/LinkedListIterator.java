@@ -2,7 +2,7 @@ package uaslp.objetos.parcial2.linkedlist;
 
 import uaslp.objetos.parcial2.Iterator;
 
-public class LinkedListIterator <T> implements Iterator<T> {
+public class LinkedListIterator <T> implements Iterator<T> { //Generico implementado por el operador diamante "<T>"
     private Node<T> currentNode;
 
     LinkedListIterator(Node<T> startNode) {

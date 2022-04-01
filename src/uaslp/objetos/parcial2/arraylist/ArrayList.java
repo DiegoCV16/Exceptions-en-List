@@ -3,8 +3,8 @@ package uaslp.objetos.parcial2.arraylist;
 import uaslp.objetos.parcial2.Iterator;
 import uaslp.objetos.parcial2.List;
 
-public class ArrayList <T> implements List<T> {
-    //ArrayList cumple con el contrato de List
+public class ArrayList <T> implements List<T> { //Generico implementado por el operador diamante "<T>"
+
     private static final int DEFAULT_SIZE = 2;
     private T[] array;
     private int size;
@@ -76,16 +76,6 @@ public class ArrayList <T> implements List<T> {
         }
     }
 
-    /**
-     * @param index 0-index
-     * @return element at position index
-     *
-     *
-     * Big(O)
-     *
-     * O(1)
-     *
-     */
     @Override
     public T getAt(int index) {
         return index >= 0 && index < size ? array[index] : null;

@@ -1,7 +1,7 @@
 package uaslp.objetos.parcial2.linkedlist;
 
-class Node <T> {
-    T data; //Ya son package-private
+class Node <T> { //Generico implementado por el operador diamante "<T>"
+    T data;
     Node<T> next;
     Node<T> previous;
 
