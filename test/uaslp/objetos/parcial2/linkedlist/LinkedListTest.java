@@ -9,12 +9,6 @@ import uaslp.objetos.parcial2.exception.NotValidIndexException;
 
 public class LinkedListTest {
 
-    //Inicialización / Preparación
-    //Ejecución -> Llamar al método probado
-    //Validación -> debe de ser automática
-
-    //TDD -> Test Driven Development
-
     @Test
     public void givenANewList_whenGetSize_thenResultIsZero(){
         //Given:
@@ -205,7 +199,7 @@ public class LinkedListTest {
     @Test
     public void givenAListWithThreeElements_whenRemoveIndex1_thenSizeIsTwo() throws NotValidIndexException, NotNullValuesAllowedException {
         //Given:
-        LinkedList<String> list=new LinkedList<>(); 
+        LinkedList<String> list=new LinkedList<>();
 
         list.addAtTail("Mundo");
         list.addAtTail("Cruel");
